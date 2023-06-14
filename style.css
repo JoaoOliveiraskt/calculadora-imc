@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.form {
+    width: 20rem;
+    height: 34rem;
+    background: linear-gradient(60deg, #b8b8b8d8, #898989, #b8b8b8d8);
+    text-align: center;
+    border-radius: 4px;
+}
+.form .title {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.form .title h1{
+    font-size: 30px;
+}
+.form .linha {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+form {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+form .div-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f5f5f5dd;
+}
+form input {
+    width: 13rem;
+    height: 2rem;
+    padding: 5px; 
+    border-radius: 4px;
+    border: none;
+    border: 1px solid; 
+    color: black;   
+}
+
+form input[type='number']::-webkit-inner-spin-button,
+form input[type='number']::-webkit-outer-spin-button {
+    appearance: none;  
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button {
+    width: 80%;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #ffffff55;
+    background-color: #2c2c48;
+    color: whitesmoke;
+}
+form button:active {
+    transform: scale(0.99);
+}
+
+form .result {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    height: 6rem;
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+    outline: none;
+    color: black;
+    background-color: #e4e4e4;
+    border-radius: 4px;
+}
+
+.info-imc {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.info-content p {
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.info-content .info-title {
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
